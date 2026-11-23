@@ -6,6 +6,7 @@ void setLed(int brightness) {
   ledBrightness = constrain(brightness, 0, 255);
   analogWrite(LED_PIN, ledBrightness);
 }
+// test cmd and pull/push
 
 // Moves the LED toward the target brightness.
 void fadeTowards(int target) {
