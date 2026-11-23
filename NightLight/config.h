@@ -20,7 +20,8 @@ enum Mode { MODE_OFF, MODE_AUTO, MODE_ON };
 // TODO Task 1: add any settings you need here (for example: const int SENSOR_SAMPLES = 8;)
 
 // ---------- LED settings (Task 2, Developer B) ----------
-// TODO Task 2: add any settings you need here (for example: const int FADE_STEP = 5;)
+// TODO Task 2: add any settings you need here
+const int FADE_STEP = 5;
 
 // ---------- Button settings (Task 3, Developer C) ----------
 // TODO Task 3: add any settings you need here (for example: const unsigned long BUTTON_DEBOUNCE_MS = 40;)
