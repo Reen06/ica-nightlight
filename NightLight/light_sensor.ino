@@ -6,4 +6,9 @@ int readLight() {
   return analogRead(LIGHT_SENSOR_PIN);
 }
 
-// TODO Task 8 (Project Manager): add lightLabel() below this line.
+const char* lightLabel(int light) {
+  if (light < DARK_THRESHOLD) {
+    return "dark";
+  }
+  return "bright";
+}
