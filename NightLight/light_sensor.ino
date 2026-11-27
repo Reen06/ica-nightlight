@@ -2,8 +2,12 @@
 // Returns 0 (dark) up to 1023 (bright).
 
 int readLight() {
-  // TODO Task 1 (Developer A): average SENSOR_SAMPLES readings.
-  return analogRead(LIGHT_SENSOR_PIN);
+  // Average several readings to smooth out sensor noise.
+  long total = 0;  // long, so a large sum cannot overflow an int
+  for (int i = 0; i < SENSOR_SAMPLES; i++) {
+    total += analogRead(LIGHT_SENSOR_PIN);
+  }
+  return total / SENSOR_SAMPLES;  // still 0 to 1023
 }
 
 const char* lightLabel(int light) {
