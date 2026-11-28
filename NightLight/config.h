@@ -30,7 +30,7 @@ const int FADE_STEP = 5;
 const unsigned long LOG_INTERVAL_MS = 500;
 
 // ---------- Night light behavior (shared by everyone) ----------
-const int DARK_THRESHOLD    = 500;  // light readings below this mean "dark"
+const int DARK_THRESHOLD    = 300;  // light readings below this mean "dark"
 const int NIGHT_BRIGHTNESS = 120;  // LED brightness (0-255) when it is dark
 const int LOOP_DELAY_MS    = 20;
 
